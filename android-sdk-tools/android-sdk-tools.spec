@@ -12,7 +12,8 @@ License: ???
 Group: Android
 Source0: https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
 Source1: android-tools.sh
-BuildRequires: java
+Requires: java-1.8.0-openjdk
+BuildRequires: systemd-units
 BuildRoot: %(mktemp -ud %{_tmppath}/%{name}-%{version}-XXXXXX)
 AutoReqProv: no
 
